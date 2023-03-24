@@ -38,4 +38,7 @@ This tutorial contains a full, real-world solution for setting up an environment
           
 - GitHub Actions:
 
-          -
+          - Create a Service Prinicpal for GitHub with the required IAM permissions, and store the secrets on GitHub.
+
+          - Create The CI pipline. Code is checked out -> Terraform is set up -> Terraform fmt occurs -> Terraform init occurs -> Terraform plan occurs ->
+          Terraform apply occurs. This pipeline creates the AKS cluster automatically.
